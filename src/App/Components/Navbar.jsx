@@ -12,7 +12,7 @@ const Navbar =()=>{
     return (
         <div className=' w-full bg-transparent p-2 flex justify-between items-center flex-1 py-2 absolute top-0 z-[1]  '>
            <div className=' flex'>
-                <img src={Logo} alt="Logo" className=' w-[90px] max-[768px]:w-[70]' />
+                <img src={Logo} alt="Logo" className=' w-[90px] max-[768px]:w-[70px]' />
                 <h2 className=' text-white px-5 max-[768px]:hidden '>Mopawa</h2>
            </div>
            <div className='flex justify-end flex-1 items-center flex-row '>

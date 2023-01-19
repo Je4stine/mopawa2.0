@@ -8,7 +8,10 @@ import NavWhite from '../NavWhite';
 
 import { Transition } from '@tailwindui/react'
 import About from "../About";
-import Devices from "../Decices";
+import Devices from "../Devices";
+import Partners from "../Partners";
+import Howto from "../Howto";
+import Venues from "../Venues";
 
 const Homepage =()=>{
     const [colorChanged, setColorChanged]= useState(false);
@@ -32,6 +35,9 @@ const Homepage =()=>{
             <ControlledCarousel/>
             <About/>
             <Devices/>
+            <Partners/>
+            <Howto/>
+            <Venues/>
             <Footer/>
         </div>
     )

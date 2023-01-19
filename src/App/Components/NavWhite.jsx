@@ -9,7 +9,7 @@ const NavWhite =()=>{
     return (
         <div className=' w-full bg-green-800 p-2 flex justify-between items-center flex-1 py-2 sticky top-0 z-[1]  '>
            <div className=' flex'>
-                <img src={Logo} alt="Logo" style={{width:90,}}/>
+                <img src={Logo} alt="Logo" className=' w-[90px] max-[768px]:w-[70px]' />
                 <h2 className=' text-white px-5 max-[768px]:hidden'>Mopawa</h2>
            </div>
             

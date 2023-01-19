@@ -1,20 +1,21 @@
 import { Parallax } from 'react-parallax';
 
-import layer7 from '../Assets/nebular.jpg'
+import layer7 from '../Assets/warzone.jpg';
+
+import Powerbank from '../Assets/Powerbanks.png';
 
 const Devices =()=>{
     return (
-        <div className=' h-10'>
-          <Parallax bgImage={layer7} bgImageAlt="the cat" strength={800}>
-            Content goes here. Parallax height grows with content height.
-            Content goes here. Parallax height grows with content height.
-            Content goes here. Parallax height grows with content height.
-            Content goes here. Parallax height grows with content height.
-            Content goes here. Parallax height grows with content height.
-            Content goes here. Parallax height grows with content height.
-            Content goes here. Parallax height grows with content height.
-            Content goes here. Parallax height grows with content height.
-            Content goes here. Parallax height grows with content height.
+        <div>
+        <Parallax bgImage={layer7} bgImageAlt="the cat" strength={500}>
+          <div className=' h-[400px] w-full bg-blue-700 bg-opacity-70 flex items-center px-10 '>
+              <div className=' flex justify-between items-center'>
+                <h2 className='text-white max-[768px]:text-sm'>
+                    Various Station Designs Applied In Different Scenarios.
+                </h2> 
+                <img src={Powerbank} alt="Powerbank" className=' w-[400px] max-[768px]:w-[200px]'/>
+              </div>
+          </div>   
         </Parallax>
         </div>
       )
