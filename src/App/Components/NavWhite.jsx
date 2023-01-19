@@ -2,7 +2,7 @@ import React from 'react';
 
 import Logo from '../Assets/log.png';
 
-import {HiMenu} from 'react-icons/hi'
+import {HiMenu} from 'react-icons/hi';
 
 const NavWhite =()=>{
 
