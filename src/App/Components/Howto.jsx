@@ -1,4 +1,4 @@
-import Usage from '../Assets/woman.jpg'
+import Usage from '../Assets/slider1.jpg'
 
 const Howto =()=>{
     return (

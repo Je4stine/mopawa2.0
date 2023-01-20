@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 
-import Woman from '../Assets/Aura.png';
+import Woman from '../Assets/slider1.jpg';
 
 import './Carousel.css'
 
@@ -13,8 +13,11 @@ function ControlledCarousel() {
   };
 
   return (
-    <div className=' z-[2]'>
+    <div className=' z-[2] realative'>
     <div  className='carouselWrapper'>
+    <div className=' absolute'>
+      <h1>Mopawa</h1>
+    </div>
     <Carousel 
       activeIndex={index} onSelect={handleSelect}
       autoPlay={true}

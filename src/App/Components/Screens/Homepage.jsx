@@ -44,6 +44,9 @@ const Homepage =()=>{
             <Howto/>
             <Venues/>
             <GetInTouch/>
+            <div>
+                <img src={require('../../Assets/kanairo-black.svg').default } alt="Kanairo"/>
+            </div>
             <Footer/>
         </div>
     )
