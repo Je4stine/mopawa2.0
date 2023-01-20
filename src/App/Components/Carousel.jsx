@@ -20,6 +20,7 @@ function ControlledCarousel() {
       autoPlay={true}
       interval={2000}
       indicators={false}
+      controls={false}
     >
       <Carousel.Item>
         <img

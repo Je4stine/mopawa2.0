@@ -6,12 +6,15 @@ import Header from "../Header";
 import Navbar from "../Navbar";
 import NavWhite from '../NavWhite';
 
+import { Parallax } from 'react-parallax';
+
 import { Transition } from '@tailwindui/react'
 import About from "../About";
 import Devices from "../Devices";
 import Partners from "../Partners";
 import Howto from "../Howto";
 import Venues from "../Venues";
+import GetInTouch from "../GetinTouch";
 
 const Homepage =()=>{
     const [colorChanged, setColorChanged]= useState(false);
@@ -32,12 +35,15 @@ const Homepage =()=>{
             {
                 colorChanged ? <NavWhite/> : <Navbar/>
             } 
-            <ControlledCarousel/>
+            <Parallax  bgImageAlt="the cat" strength={500}>
+                <ControlledCarousel/>
+            </Parallax>
             <About/>
             <Devices/>
             <Partners/>
             <Howto/>
             <Venues/>
+            <GetInTouch/>
             <Footer/>
         </div>
     )
