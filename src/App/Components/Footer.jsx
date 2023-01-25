@@ -44,17 +44,16 @@ const Footer =()=>{
                     <h2 className=' text-white max-[768px]:text-sm max-[768px]:mt-5'>Socials</h2>
                     <div className='flex max-[768px]:items-center '>
                          <FaFacebook color='#fff' size={25}/>
-                         <p className=' text-gray-400 m-2 max-[768px]:text-sm'>Mopawa Software limited</p>
+                         <a href='https://www.facebook.com/mopawasoftware' className=' text-gray-400 m-2 max-[768px]:text-sm'>Mopawa Software limited</a>
                     </div>
                     <div className='flex items-center '>
                          <FaInstagramSquare color=' #fff' size={25}/>
-                         <p className=' text-gray-400 m-2 max-[768px]:text-sm'>Mopawa Software limited</p>
+                         <a href='https://www.instagram.com/mopawasoftwareke/' className=' text-gray-400 m-2 max-[768px]:text-sm'>Mopawa Software limited</a>
                     </div>
                     <div className='flex items-center '>
                          <AiFillTwitterCircle color=' #fff' size={25}/>
-                         <p className=' text-gray-400 m-2 max-[768px]:text-sm'>Mopawa Software limited</p>
+                         <a href="https://twitter.com/MopawaLtd" className=' text-gray-400 m-2 max-[768px]:text-sm'>Mopawa Software limited</a>
                     </div>
-                    
                   
                 </div>
             </div>
