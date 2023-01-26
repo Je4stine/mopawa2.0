@@ -16,16 +16,17 @@ import {
 
 function App() {
   return (
-    <div>
+    
     <Router>
         <Routes>
           <Route path='/' element={<Homepage/>}/>
           <Route path='/about' element={<About/>}/>
           <Route path='/products' element={<Product/>}/>
           <Route path='/faqs' element={<FAQs/>}/>
+          
         </Routes>
-      </Router>
-    </div>
+    </Router>
+    
   
   );
 }

@@ -48,7 +48,7 @@ const Product =()=>{
            </LazyLoadComponent>
            
             <div className=" flex flex-1 max-[786px]:flex-col" id="#1">
-                <img src={Station} className=" w-[800px] max-[768px]:w-[500px] " alt="Forty 40"/>
+                <img src={Station} className=" w-[800px] max-[768px]:w-[500px] " alt="Forty 40" loading="lazy"/>
                 <div className="p-[100px] max-[768px]:p-3" >
                     <h1>
                         Power Bank Station

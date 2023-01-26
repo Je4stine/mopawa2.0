@@ -15,7 +15,7 @@ const Navbar =()=>{
     }
 
     return (
-        <nav className=" w-full absolute top-0 z-[1] min-[768px]:flex min-[768px]:justify-between max-[768px]:bg-white px-5 max-[768px]:h-[60px]">
+        <nav className=" w-full absolute top-0 z-[1] min-[768px]:flex min-[768px]:justify-between max-[768px]:bg-white px-5 max-[768px]:px-1 max-[768px]:h-[60px]">
             <div className=' max-[768px]:flex max-[768px]:justify-between items-center justify-between' >
                 <div className=' flex items-center justify-center'>
                     <img src={Logo} alt="Logo" className=' w-[100px] max-[768px]:w-[70px] min-[768px]:h-[50px] mt-1' />

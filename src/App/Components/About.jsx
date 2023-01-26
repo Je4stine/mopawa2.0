@@ -12,17 +12,17 @@ const About =()=>{
             <div>
                 <div className=' flex mt-2 max-[768px]:flex-col'>
                     <div className=' mx-4 flex flex-col justify-center items-center'>
-                        <img src={dummy2} className=" w-[200px] max-[768px]:w-[300px]"/>
+                        <img src={dummy2} className=" w-[200px] max-[768px]:w-[300px]" loading='lazy' alt="Refundable"/>
                         <h4 className=' max-[768px]:text-md'>Pay Security fee</h4>
                         <p className=' text-center max-[768px]:text-sm'>Pay a refundable Security deposit to the paybill</p>
                     </div>
                     <div className=' mx-4 flex flex-col justify-center items-center'>
-                        <img src={dummy3} className=" w-[200px] max-[768px]:w-[300px]"/>
+                        <img src={dummy3} className=" w-[200px] max-[768px]:w-[300px]" loading='lazy' alt="Refundable"/>
                         <h4 className=' max-[768px]:text-md'>Use the power banks</h4>
                         <p className=' text-center max-[768px]:text-sm'>Use the power bank at your own convinience</p>
                     </div>
                     <div className=' mx-4 flex flex-col justify-center items-center'>
-                        <img src={dummy} className=" w-[200px] max-[768px]:w-[300px]"/>
+                        <img src={dummy} className=" w-[200px] max-[768px]:w-[300px]" loading='lazy'alt="Refundable"/>
                         <h4 className=' max-[768px]:text-md'>Return </h4>
                         <p className=' text-center max-[768px]:text-sm'>Return the powerbank to the station and get a refund</p>
                     </div>
