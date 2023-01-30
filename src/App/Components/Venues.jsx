@@ -6,6 +6,8 @@ import Naifest from '../Assets/naifest.jpg';
 
 import Mall from '../Assets/2rivers.jpg';
 
+import LazyLoad from 'react-lazy-load';
+
 const Venues =()=>{
     return (
         <div className=' flex flex-col align-center justify-center '>
@@ -19,7 +21,7 @@ const Venues =()=>{
                         <div className=' absolute left-[45%] top-[45%] font-bold hover:opacity-100 z-1'>Hospitals</div>
                     </div>
                     <div className=' flex flex-col flex-1 relative'>
-                        <img src={Club} alt="Venues" className=' w-[500px] h-full hover:opacity-25 max-[768px]:w-full object-cover'loading='lazy'/>
+                     <img src={Club} alt="Venues" className=' w-[500px] h-full hover:opacity-25 max-[768px]:w-full object-cover'loading='lazy'/> 
                         <div className=' absolute left-[45%] top-[45%] font-bold hover:opacity-100 z-1'>Clubs</div>
                     </div>
                     <div className=' flex flex-col flex-1 relative'>

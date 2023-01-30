@@ -17,7 +17,7 @@ function ControlledCarousel() {
   };
 
   return (
-    <div className=' z-[2] realative'>
+    <div className=' z-[2] realative h-full mt-[50px] md:mt-0'>
   
     <Carousel 
       activeIndex={index} onSelect={handleSelect}

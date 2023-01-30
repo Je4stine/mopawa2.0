@@ -26,7 +26,7 @@ const About =()=>{
            {
             colorChanged ? <NavWhite/> : <Navbar/>
            }
-           <LazyLoadComponent>
+           
                     <div className=" parallaxerr1">
                             <span className=" absolute top-[50%] left-[45%]">
                                 <h1 className=" text-white font-bold">About Us</h1>
@@ -35,14 +35,14 @@ const About =()=>{
                                     <AiOutlineArrowDown size={50} color="white"/>
                             </a> 
 
-                    </div>
-           </LazyLoadComponent>
-           
+                    </div>           
             <div>
                 <img src={require('../../Assets/kanairo-black.svg').default } alt="Kanairo"/>
             </div>
             <Footer/>
         </div>
+
+        
     )
 };
 

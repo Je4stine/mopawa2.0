@@ -1,4 +1,6 @@
-import Usage from '../Assets/slider1.jpg'
+import Usage from '../Assets/slider1.jpg';
+
+import Usage2 from '../Assets/Capture1.jpg'
 
 const Howto =()=>{
     return (
@@ -19,13 +21,13 @@ const Howto =()=>{
                 </p>
             </div>
             <div className=' w-full'>
-                <img src={Usage} alt="Usage" loading='lazy'/>
+                <img src={Usage2} alt="Usage" loading='lazy'/>
             </div>
         </div>
 
         <div className=' flex justify-evenly flex-1 max-[768px]:flex-col-reverse '>
             <div className=' w-full'>
-                        <img src={Usage} alt="Usage" loading='lazy'/>
+                        <img src={Usage2} alt="Usage" loading='lazy'/>
              </div>
             <div className=" flex flex-col items-center justify-center bg-gray-100 max-[768px]:p-3">
                 <h1 className=' max-[768px]:text-center'>

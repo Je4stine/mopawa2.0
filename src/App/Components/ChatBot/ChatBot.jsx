@@ -15,8 +15,6 @@ const steps = [
     }, {
         id: '2',
  
-        // Here we want the user
-        // to enter input
         user: true,
         trigger: '3',
     }, {
@@ -61,9 +59,6 @@ function Bot() {
         <div className="App">
             <ThemeProvider theme={theme}>
                 <ChatBot
- 
-                    // This appears as the header
-                    // text for the chat bot
                     headerTitle="Mopawa assistant"
                     steps={steps}
                     {...config}

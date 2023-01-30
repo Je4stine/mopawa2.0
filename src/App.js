@@ -13,6 +13,7 @@ import {
   Route,
   Routes
 } from "react-router-dom";
+import Contacts from './App/Components/Screens/Contacts';
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
           <Route path='/' element={<Homepage/>}/>
           <Route path='/about' element={<About/>}/>
           <Route path='/products' element={<Product/>}/>
-          <Route path='/faqs' element={<FAQs/>}/>
+          <Route path='/contact' element={<Contacts/>}/>
           
         </Routes>
     </Router>

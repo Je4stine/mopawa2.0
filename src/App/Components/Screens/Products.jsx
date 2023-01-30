@@ -1,4 +1,4 @@
-import React,{ useState} from "react";
+import React,{ useState, Suspense} from "react";
 
 import Footer from "../Footer";
 
@@ -13,6 +13,8 @@ import {AiOutlineArrowDown} from 'react-icons/ai';
 import './Product.css';
 
 import {  LazyLoadComponent } from "react-lazy-load-image-component";
+
+import LazyLoad from 'react-lazy-load';
 
 
 
@@ -36,16 +38,15 @@ const Product =()=>{
            {
             colorChanged ? <NavWhite/> : <Navbar/>
            }
-           <LazyLoadComponent>
                 <div className="parallaxerr">
-                    <span className=" absolute top-[50%] left-[45%]">
+                    <span className=" absolute top-[50%] left-[30%] md:left-[45%]">
                             <h1 className=" text-white font-bold">Our Products</h1>
                     </span>
                     <a className=" absolute bottom-10 left-[50%] animate-bounce" href="#1">
                             <AiOutlineArrowDown size={50} color="white"/>
                     </a> 
                 </div>
-           </LazyLoadComponent>
+            
            
             <div className=" flex flex-1 max-[786px]:flex-col" id="#1">
                 <img src={Station} className=" w-[800px] max-[768px]:w-[500px] " alt="Forty 40" loading="lazy"/>
