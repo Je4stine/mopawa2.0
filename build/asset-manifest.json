@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a587f63c.css",
+    "main.js": "/static/js/main.d8121a8f.js",
+    "static/js/787.7f89fdc5.chunk.js": "/static/js/787.7f89fdc5.chunk.js",
+    "static/media/Station-1.png": "/static/media/Station-1.35a5eb775b62107ad74e.png",
+    "static/media/image2.jpg": "/static/media/image2.54980ebd00fe69a714bb.jpg",
+    "static/media/image3.jpg": "/static/media/image3.83fab9197e6072340c84.jpg",
+    "static/media/image1.jpg": "/static/media/image1.225c94a7437e7f6adec9.jpg",
+    "static/media/hero2.jpg": "/static/media/hero2.9ac701876c442b55c74c.jpg",
+    "static/media/naifest.jpg": "/static/media/naifest.81d409b3e32c4e3c3237.jpg",
+    "static/media/codmm.png": "/static/media/codmm.cb99526c270d1e9567f5.png",
+    "static/media/Mappa.png": "/static/media/Mappa.24f5586b5ba037f6b0a6.png",
+    "static/media/Raleway-Italic-VariableFont_wght.ttf": "/static/media/Raleway-Italic-VariableFont_wght.292a60624abe8149803a.ttf",
+    "static/media/2rivers.jpg": "/static/media/2rivers.0ee3f1eab79840620c32.jpg",
+    "static/media/Capture1.jpg": "/static/media/Capture1.b15ec6c2b2484a99726c.jpg",
+    "static/media/fortyforty.jpg": "/static/media/fortyforty.1887ebc1e024bfd858dd.jpg",
+    "static/media/log.png": "/static/media/log.dbad167a87772da7b9c8.png",
+    "static/media/slider1.jpg": "/static/media/slider1.a565fa167f09350fffcc.jpg",
+    "static/media/KNH.jpg": "/static/media/KNH.cd66e657cac8d2c2b94a.jpg",
+    "static/media/phoneus.jpg": "/static/media/phoneus.036233044897675cc8d8.jpg",
+    "static/media/mpesa.jpg": "/static/media/mpesa.38cc2d6b8235152ddc14.jpg",
+    "static/media/kanairo-black.svg": "/static/media/kanairo-black.e124e955144809d390dfd430e0dd915e.svg",
+    "index.html": "/index.html",
+    "main.a587f63c.css.map": "/static/css/main.a587f63c.css.map",
+    "main.d8121a8f.js.map": "/static/js/main.d8121a8f.js.map",
+    "787.7f89fdc5.chunk.js.map": "/static/js/787.7f89fdc5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a587f63c.css",
+    "static/js/main.d8121a8f.js"
+  ]
+}

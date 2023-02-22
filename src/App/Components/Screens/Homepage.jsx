@@ -15,6 +15,7 @@ import Partners from "../Partners";
 import Howto from "../Howto";
 import Venues from "../Venues";
 import GetInTouch from "../GetinTouch";
+import ChatBot from '../ChatBot/ChatBot'
 
 const Homepage =()=>{
     const [colorChanged, setColorChanged]= useState(false);
@@ -44,6 +45,7 @@ const Homepage =()=>{
             <Howto/>
             <Venues/>
             <GetInTouch/>
+            <ChatBot/>
             <div>
                 <img src={require('../../Assets/kanairo-black.svg').default } alt="Kanairo"/>
             </div>

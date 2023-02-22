@@ -1,40 +1,65 @@
-import React, { useState} from 'react';
-
-import { Transition } from "@headlessui/react";
-
-import {HiMenu} from 'react-icons/hi'
+import React, {useState} from 'react';
 
 import Logo from '../Assets/log.png';
 
+import {HiMenu} from 'react-icons/hi';
+
+
 const Navbar =()=>{
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsopen]=useState(false);
+    const [tab, setTab]=useState(1);
+
+    const Toggle=() =>{
+       setIsopen(!isOpen);
+       console.log(isOpen)         
+    }
 
     return (
-        <div className=' w-full bg-transparent p-2 flex justify-between items-center flex-1 py-2 absolute top-0 z-[1]  '>
-           <div className=' flex'>
-                <img src={Logo} alt="Logo" className=' w-[90px] max-[768px]:w-[70px]' />
-                <h2 className=' text-white px-5 max-[768px]:hidden '>Mopawa</h2>
-           </div>
-           <div className='flex justify-end flex-1 items-center flex-row '>
-            <ul className=' flex text-white justify-around w-[30%] items-center list-none '>
-                    <li >
-                       <a href='#' className=' no-underline text-white font-bold hover:bg-orange-400 p-2 rounded-md hover:transition-all max-[768px]:hidden '>Home</a> 
-                    </li>
-                    <li>
-                        <a href='#' className=' no-underline font-bold text-white hover:bg-orange-400 p-2 rounded-md max-[768px]:hidden'>Products</a> 
-                    </li>
-                    <li>
-                         <a href='#' className=' no-underline font-bold  text-white hover:bg-orange-400 p-2 rounded-md max-[768px]:hidden'>FAQs</a> 
-                    </li>
-                    <li>
-                        <a href='#' className=' no-underline font-bold text-white hover:bg-orange-400 p-2 rounded-md max-[768px]:hidden'>About</a>
-                    </li>
-                    <li className=' min-[768px]:hidden'>
-                        <HiMenu/>
-                    </li>
-                </ul>
-           </div>
-        </div>
+        <nav className=" w-full absolute top-0 z-[1] min-[768px]:flex min-[768px]:justify-between max-[768px]:bg-white px-5 max-[768px]:px-1 max-[768px]:h-[60px]">
+            <div className=' max-[768px]:flex max-[768px]:justify-between items-center justify-between' >
+                <div className=' flex items-center justify-center'>
+                    <img src={Logo} alt="Logo" className=' w-[100px] max-[768px]:w-[70px] min-[768px]:h-[50px] mt-1' />
+                    <h1 className=" mx-4 my-6 font-bold text-2xl text-white max-[768px]:text-black max-[768px]:my-3"><a className=' no-underline text-white font-bold ' href='/'>Mopawa</a></h1>
+                </div>
+                
+                <span  className=' cursor-pointer block min-[768px]:hidden' onClick={Toggle}>
+                    <HiMenu size={30}/>
+                </span>
+            </div>
+            {
+                isOpen ? 
+                    <ul className=" min-[768px]:flex min-[768px]:items-center z-[-1] min-[768px]:z-auto min-[768px]:static absolute max-[768px]:bg-white w-full left-0 min-[768px]:w-auto min-[768px]:opacity-100 opacity-100 transition-all ease-in duration-500">
+                        <li className={" mx-4 my-6 hover:bg-[#f15d30] px-2 rounded-md" + (tab===1? "bg-[#f15d30]":null)}> 
+                        <a href="/" onClick={() => setTab(1)} className=" hover:text-[#f15d30] duration-500 no-underline text-black font-bold ">Home</a>  
+                        </li>
+                        <li className={" mx-4 my-6 hover:bg-[#f15d30] px-2 rounded-md" + (tab===2? "bg-[#f15d30]":null)}>
+                         <a href="/products" onClick={() => setTab(2)} className=" hover:text-[#f15d30] duration-500 no-underline text-black font-bold">Products</a> 
+                        </li>
+                        <li className= {" mx-4 my-6 hover:bg-[#f15d30] px-2 rounded-md" + (tab===3? "bg-[#f15d30]":null)}>
+                            <a href="/about" onClick={() => setTab(3)} className=" hover:text-[#f15d30] duration-500 no-underline text-black font-bold">About</a> 
+                        </li>
+                        <li className={" mx-4 my-6 hover:bg-[#f15d30] px-2 rounded-md" + (tab===4? "bg-[#f15d30]":null)}>
+                            <a href="/contact" onClick={() => setTab(4)} className=" hover:text-[#f15d30] duration-500 no-underline text-black font-bold">Contacts</a> 
+                        </li>
+                    </ul> 
+                :
+                    <ul className=" min-[768px]:flex min-[768px]:items-center z-[-1] min-[768px]:z-auto min-[768px]:static absolute max-[768px]:bg-white w-full left-0 min-[768px]:w-auto min-[768px]:opacity-100 opacity-100 top-[-400px] transition-all ease-in duration-500">
+                        <li className={" mx-4 my-6 hover:bg-[#f15d30] px-2 rounded-md" + (tab===1? "bg-[#f15d30] rounded-md":null)}> 
+                        <a href="/" onClick={() => setTab(1)} className=" hover:text-yellow-400 duration-500 text-white font-bold no-underline">Home</a>  
+                        </li>
+                        <li className={" mx-4 my-6 hover:bg-[#f15d30] px-2 rounded-md" + (tab===2? "bg-[#f15d30]":null)}>
+                            <a href="/products" onClick={() => setTab(2)} className=" hover:text-yellow-400 duration-500 text-white font-bold no-underline">Products</a> 
+                        </li>
+                        <li className={" mx-4 my-6 hover:bg-[#f15d30] px-2 rounded-md" + (tab===3? "bg-[#f15d30]":null)}>
+                            <a href="/about" onClick={() => setTab(3)} className=" hover:text-yellow-400 duration-500 text-white font-bold no-underline">About</a> 
+                        </li>
+                        <li className={" mx-4 my-6 hover:bg-[#f15d30] px-2 rounded-md" + (tab===4? "bg-[#f15d30]":null)}>
+                            <a href="/contact" onClick={() => setTab(4)} className=" hover:text-yellow-400 duration-500 text-white font-bold no-underline">Contacts</a> 
+                        </li>
+                    </ul>
+            }
+            
+        </nav>
     )
 };
 

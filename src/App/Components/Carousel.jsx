@@ -3,6 +3,10 @@ import Carousel from 'react-bootstrap/Carousel';
 
 import Woman from '../Assets/slider1.jpg';
 
+import Image1 from '../Assets/image1.jpg';
+
+import Image2 from '../Assets/image2.jpg';
+
 import './Carousel.css'
 
 function ControlledCarousel() {
@@ -13,11 +17,8 @@ function ControlledCarousel() {
   };
 
   return (
-    <div className=' z-[2] realative'>
-    <div  className='carouselWrapper'>
-    <div className=' absolute'>
-      <h1>Mopawa</h1>
-    </div>
+    <div className=' z-[2] realative h-full mt-[50px] md:mt-0'>
+  
     <Carousel 
       activeIndex={index} onSelect={handleSelect}
       autoPlay={true}
@@ -37,7 +38,7 @@ function ControlledCarousel() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={Woman}
+          src={Image1}
           alt="Second slide"
           style={{ maxHeight:800}}
         />
@@ -47,14 +48,14 @@ function ControlledCarousel() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={Woman}
+          src={Image2}
           alt="Third slide"
           style={{ maxHeight:800}}
         />
         
       </Carousel.Item>
     </Carousel>
-    </div>
+
     </div>
   );
 }
