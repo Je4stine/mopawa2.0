@@ -34,7 +34,7 @@ const Howto =()=>{
                 Drive more customers to the business
                 </h1>
                 <p className=" text-center max-[768px]:text-sm">
-                Businesses must offer their location on the charge application so customers can find them.<br/> When customers search for power bank rental stations to borrow or return a power bank, this greatly increases the probability of a customer visiting the business with a charging device. And it could increase the dwell time in their store while charging.
+                    Businesses must offer their location on the charge application so customers can find them.<br/> When customers search for power bank rental stations to borrow or return a power bank, this greatly increases the probability of a customer visiting the business with a charging device. And it could increase the dwell time in their store while charging.
                 </p>
             </div>
         </div>
